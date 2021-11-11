@@ -190,9 +190,10 @@ jobs:
         yum install mesa-libGLU-devel mesa-libGL-devel xorg-x11-server-devel libXrandr-devel -y && \
         yum install freetype-devel harfbuzz -y && \
         yum install python3-devel libffi-devel -y && \
-        pip3 install --upgrade pip twine wheel setuptools && \
+        pip install --upgrade pip twine wheel setuptools && \
         yum install libXinerama-devel libXcursor-devel libXi-devel -y && \
-        python3 -m setup bdist_wheel --plat-name manylinux2014_aarch64 --dist-dir dist && \
+        python --version && \
+        python -m setup bdist_wheel --plat-name manylinux2014_aarch64 --dist-dir dist && \
         deactivate'
   deploy-packages:
 
