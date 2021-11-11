@@ -120,7 +120,7 @@ jobs:
         deactivate'
   deploy-packages:
 
-    needs: [build-windows-wheels, build-mac10-wheels, build-linux-wheels]
+    needs: [build-linux-wheels]
     runs-on: windows-2019
 
     steps:
