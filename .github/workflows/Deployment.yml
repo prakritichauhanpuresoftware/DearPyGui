@@ -102,7 +102,7 @@ jobs:
         git submodule update --init --recursive ./Dependencies/freetype && \
         git submodule update --init --recursive ./Dependencies/glfw && \
         yum update -y && \
-        yum install mesa-libGLU-devel mesa-libGL-devel xorg-x11-server-devel libXrandr-devel openssl -y && \
+        yum install mesa-libGLU-devel mesa-libGL-devel xorg-x11-server-devel libXrandr-devel openssl-devel -y && \
         yum install freetype-devel harfbuzz -y && \
         yum install python3-devel libffi-devel wget -y && \
         curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain=stable && \
